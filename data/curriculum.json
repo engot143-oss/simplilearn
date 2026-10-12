@@ -1,0 +1,102 @@
+{
+  "id": "python-skillup",
+  "name": "Free Python Course with Certificate",
+  "provider": "Simplilearn SkillUp",
+  "url": "https://www.simplilearn.com/learn-python-basics-free-course-skillup",
+  "why_this_class": "It starts from zero and reaches NumPy, Pandas, Matplotlib, and Scikit-Learn, which is the Python used for AI work.",
+  "lessons": [
+    {
+      "id": "1",
+      "title": "Introduction to Python",
+      "minutes": 47,
+      "phase": "foundations",
+      "practice": "print(\"I am studying Python for AI\")"
+    },
+    {
+      "id": "2",
+      "title": "Datatypes in Python",
+      "minutes": 53,
+      "phase": "foundations",
+      "practice": "name = \"Your Name\"\nyears_at_work = 20\ntopics = [\"python\", \"data\", \"ai\"]\nprint(name)\nprint(years_at_work)\nprint(topics)"
+    },
+    {
+      "id": "3",
+      "title": "Strings in Python",
+      "minutes": 41,
+      "phase": "foundations",
+      "practice": "lesson = \"Strings\"\nprint(f\"I am on {lesson}\")"
+    },
+    {
+      "id": "4",
+      "title": "Conditional Statements in Python",
+      "minutes": 35,
+      "phase": "foundations",
+      "practice": "hours = 3\nif hours < 3:\n    print(\"short week\")\nelse:\n    print(\"on track\")"
+    },
+    {
+      "id": "5",
+      "title": "Loops in Python",
+      "minutes": 50,
+      "phase": "foundations",
+      "practice": "topics = [\"python\", \"data\", \"ai\"]\nfor topic in topics:\n    print(topic)"
+    },
+    {
+      "id": "6",
+      "title": "OOPs in Python",
+      "minutes": 65,
+      "phase": "foundations",
+      "practice": "class Lesson:\n    def __init__(self, title, minutes):\n        self.title = title\n        self.minutes = minutes\n\nintro = Lesson(\"Introduction to Python\", 47)\nprint(intro.title)\nprint(intro.minutes)"
+    },
+    {
+      "id": "7",
+      "title": "Threading and Scripting in Python",
+      "minutes": 38,
+      "phase": "foundations",
+      "hint": "Save it as hello.py and run it with python3 hello.py.",
+      "practice": "print(\"I am studying Python for AI\")"
+    },
+    {
+      "id": "8",
+      "title": "Python Libraries: NumPy",
+      "minutes": 46,
+      "phase": "ai_tools",
+      "practice": "import numpy as np\nminutes = np.array([40, 40, 40, 40])\nprint(minutes.sum())"
+    },
+    {
+      "id": "9",
+      "title": "Python Libraries: Pandas",
+      "minutes": 46,
+      "phase": "ai_tools",
+      "practice": "import pandas as pd\nlessons = pd.DataFrame({\"lesson\": [\"NumPy\", \"Pandas\"]})\nprint(lessons)"
+    },
+    {
+      "id": "10",
+      "title": "Python Libraries: Matplotlib",
+      "minutes": 52,
+      "phase": "ai_tools",
+      "practice": "import matplotlib.pyplot as plt\nplt.bar([\"week 1\", \"week 2\"], [160, 120])\nplt.savefig(\"hours.png\")\nprint(\"saved hours.png\")"
+    },
+    {
+      "id": "11",
+      "title": "Python Libraries: Scikit-Learn",
+      "minutes": 44,
+      "phase": "ai_tools",
+      "practice": "from sklearn.linear_model import LinearRegression\nmodel = LinearRegression()\nmodel.fit([[1], [2], [3]], [2, 4, 6])\nprint(model.predict([[4]]))"
+    },
+    {
+      "id": "12",
+      "title": "Web Scraping with Python",
+      "minutes": 52,
+      "phase": "practice",
+      "practice": "page = \"<h1>Python</h1>\"\nstart = page.find(\"<h1>\") + 4\nend = page.find(\"</h1>\")\nprint(page[start:end])"
+    },
+    {
+      "id": "13",
+      "title": "Python Interview Questions",
+      "minutes": 45,
+      "phase": "practice",
+      "kind": "writing",
+      "practice": "Write three sentences in your own words: what a variable is, what a loop does, and what model.fit does in the Scikit-Learn practice."
+    }
+  ]
+}

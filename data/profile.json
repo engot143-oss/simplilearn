@@ -1,0 +1,38 @@
+{
+  "goal": "Learn the Python that AI work uses",
+  "pace": {
+    "sessions_per_week": 4,
+    "minutes_per_session": 40
+  },
+  "current_class_id": "python-skillup",
+  "watching": [
+    {
+      "id": "python-skillup",
+      "name": "Free Python Course with Certificate",
+      "kind": "class",
+      "enrolled": true,
+      "url": "https://www.simplilearn.com/learn-python-basics-free-course-skillup"
+    },
+    {
+      "id": "python-certification",
+      "name": "Python Certification Course",
+      "kind": "bootcamp",
+      "enrolled": false,
+      "url": "https://www.simplilearn.com/mobile-and-software-development/python-development-training"
+    },
+    {
+      "id": "data-science-python",
+      "name": "Data Science with Python",
+      "kind": "bootcamp",
+      "enrolled": false,
+      "url": "https://www.simplilearn.com/big-data-and-analytics/python-for-data-science-training"
+    },
+    {
+      "id": "applied-agentic-ai",
+      "name": "Applied Agentic AI",
+      "kind": "bootcamp",
+      "enrolled": false,
+      "url": "https://www.simplilearn.com/agentic-ai-course-training"
+    }
+  ]
+}

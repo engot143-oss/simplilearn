@@ -1,0 +1,6 @@
+__pycache__/
+.pytest_cache/
+*.pyc
+data/snapshots/
+data/latest_report.md
+hours.png
