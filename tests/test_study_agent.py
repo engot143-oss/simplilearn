@@ -50,6 +50,10 @@ class StudyAgentTests(unittest.TestCase):
     def setUp(self) -> None:
         self.root = Path(tempfile.mkdtemp())
         shutil.copytree(ROOT / "data", self.root / "data")
+        shutil.rmtree(self.root / "data" / "snapshots", ignore_errors=True)
+        report = self.root / "data" / "latest_report.md"
+        if report.exists():
+            report.unlink()
         self.store = Store(self.root)
 
     def tearDown(self) -> None:
@@ -81,7 +85,16 @@ class StudyAgentTests(unittest.TestCase):
             ],
         )
         self.assertEqual(facts["hours"], ["12"])
-        self.assertIn("12 Aug 2026", facts["dates"])
+        self.assertIn("Application closes 12 Aug 2026", facts["highlights"])
+        unrelated = """
+        <h1>Free Python Course</h1>
+        <p>This Course Includes 11 Hours Of self-paced video lessons</p>
+        <h2>Get Ahead with Professional Certificate Programs</h2>
+        <p>Duration: 20 weeks</p>
+        """
+        kept = extract_facts(unrelated, "https://example.test/python")
+        self.assertEqual(kept["hours"], ["11"])
+        self.assertEqual(kept["weeks"], [])
 
     def test_second_check_reports_what_changed(self) -> None:
         first = extract_facts(CLASS_PAGE, "https://example.test/python")
